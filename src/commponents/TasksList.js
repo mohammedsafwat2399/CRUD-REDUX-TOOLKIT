@@ -13,7 +13,7 @@ console.log(tasksList)
   useEffect(()=>{
     dispatch(gitTasks())
   }
-  ,[])
+  ,[dispatch])
 
   const updateTask = (task) => {
     setModalShow(true);
