@@ -8,7 +8,7 @@ import { setSelectedTask } from "../store/taskSlice";
 
 const TasksList = () => {
   const dispatch = useDispatch();
-  const { tasksList , isLoading } = useSelector((state) => state.task);
+  const { tasksList  } = useSelector((state) => state.task);
 console.log(tasksList)
   useEffect(()=>{
     dispatch(gitTasks())
